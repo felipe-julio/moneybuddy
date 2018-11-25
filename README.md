@@ -1,6 +1,6 @@
 # Money Buddy
 
-Web application that helps you see how you are spending your money.
+Web application that helps you see how you are spending your money. The front-end for this project is being developed in a separate [repository](https://github.com/samuelgrigolato/moneybuddy-front).
 
 ## Features
 
@@ -14,6 +14,28 @@ None, yet.
 * Reports.
 * Dashboard.
 * Budget.
+
+## Technologies
+
+- Python
+- Flask
+
+## How to Develop
+
+```
+python -m venv <venv_dir>
+source <venv_dir>/bin/activate
+(venv_dir) pip install -r requirements.txt
+(venv_dir) FLASK_ENV=development FLASK_APP=api flask run
+```
+
+Note that you can use whichever virtual environment tool you prefer, or even none at all (not recommended).
+
+Although not being strictly necessary, you may find it useful to spawn a front-end development server as well, specially if you're developing an entire new feature. Refer to the [front-end repository](https://github.com/samuelgrigolato/moneybuddy-front) for details.
+
+## How to Deploy
+
+This project has everything needed to be deployed on Heroku (see the `Procfile`).
 
 ## Important Design Principles
 
